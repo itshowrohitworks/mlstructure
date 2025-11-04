@@ -6,9 +6,9 @@ Ensure you have Python 3.x installed.Virtual Environment: Highly recommended for
 1. Clone the Repository:
    git clone https://github.com/itshowrohitworks/mlstructure.git
    cd mlstructure
-3. Create and Activate a Virtual Environment:
+2. Create and Activate a Virtual Environment:
    uv venv 
-5. I used uv package to make the virtual env.
+3. I used uv package to make the virtual env.
 
 ## Activate (Example for macOS/Linux)
 source .venv/bin/activate
