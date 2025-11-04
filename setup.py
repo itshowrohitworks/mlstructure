@@ -22,5 +22,5 @@ setup(
     author='itshowrohitworks',
     author_email='therohitshrivastava@gmail.com',
     packages=find_packages(),
-    install_requires = ['numpy','pandas'],
+    install_requires = get_requirements('requirements.txt'),
 )
