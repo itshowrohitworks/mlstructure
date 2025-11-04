@@ -13,7 +13,7 @@ Ensure you have Python 3.x installed.Virtual Environment: Highly recommended for
 ## Activate (Example for macOS/Linux)
 source .venv/bin/activate
 
-3. Install the ProjectInstall all dependencies and the package itself in editable mode for development.Bash# Installs dependencies listed in setup.py (which uses requirements.txt)
+Install the Project, Install all dependencies and the package itself in editable mode for development. Installs dependencies listed in setup.py (which uses requirements.txt)
 
 ## The -e flag allows source code changes to be reflected instantly.
 uv pip install -e .
