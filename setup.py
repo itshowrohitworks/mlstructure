@@ -1,20 +1,24 @@
-from setuptools import find_packages,setup
+from setuptools import find_packages, setup
 from typing import List
 
-hypen_e_dot = "-e ."
+# Use an uppercase constant for clarity
+HYPHEN_E_DOT = "-e ."
 
-def get_requirements(path:str)->List[str]:
+def get_requirements(file_path:str) -> List[str]:
     """
-    This function will return the list of requirements.
+    Reads all requirements from the file path, stripping whitespace,
+    and removing the special '-e .' marker.
     """
     requirements = []
-    with open(path) as f:
-        requirements = f.readline()
-        requirements = [req.replace("\n"," ") for req in requirements]
-        if hypen_e_dot in requirements:
-            requirements.remove(hypen_e_dot)
+    with open(file_path) as f:
+        # Read all lines and strip leading/trailing whitespace
+        requirements = [line.strip() for line in f.readlines()]
+        
+        # Explicitly remove the '-e .' entry
+        if HYPHEN_E_DOT in requirements:
+            requirements.remove(HYPHEN_E_DOT)
+            
     return requirements
-    pass
 
 setup(
     name="mlstructure",
