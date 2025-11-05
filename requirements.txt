@@ -1,4 +1,7 @@
 numpy
 pandas
+matplotlib
+seaborn
+ipykernel
 # Triggers setup.py
 -e . 
