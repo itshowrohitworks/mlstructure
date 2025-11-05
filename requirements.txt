@@ -3,5 +3,6 @@ pandas
 matplotlib
 seaborn
 ipykernel
+requests
 # Triggers setup.py
 -e . 
